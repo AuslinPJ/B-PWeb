@@ -7,6 +7,10 @@ import { AngularFireModule } from 'angularfire2';
 // New imports to update based on AngularFire2 version 4
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import {MatToolbarModule,MatIconModule,MatButtonModule
+  ,MatSidenavModule,MatFormFieldModule,MatInputModule,MatMenuModule} from '@angular/material';
+  import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+  import {FormControl,FormsModule,ReactiveFormsModule, Validators} from '@angular/forms';
 
 export const firebaseConfig = {
       apiKey: "AIzaSyCaE4ASRWuXBqueMnR5dLy0srNwYZzGzsk",
@@ -16,12 +20,34 @@ export const firebaseConfig = {
       storageBucket: "",
       messagingSenderId: "357278893634"
 };
+
+
+//NgModule for material 
+@NgModule({
+  exports: [
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatFormFieldModule,
+    MatMenuModule,
+   
+  ]
+})
+export class MaterialModule { }
+//material done
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule, 
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule
