@@ -6,7 +6,7 @@
     color: #ffffff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
-    height:500px;
+    
 }
 .container-fluid {
     padding: 60px 50px;
@@ -66,7 +66,3 @@ a {
     color: rgb(67, 11, 139) !important;
 }
 .navbar-collapse.collapse.in { display: block!important; }
-
-
-
- 
