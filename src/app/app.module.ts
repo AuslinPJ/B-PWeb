@@ -13,6 +13,11 @@ import {MatToolbarModule,MatIconModule,MatButtonModule
   import {FormControl,FormsModule,ReactiveFormsModule, Validators} from '@angular/forms';
   import { HttpModule } from '@angular/http';
   import { HttpClient } from '@angular/common/http';
+  import { RouterModule, Routes } from '@angular/router';
+  import { AngularFireDatabase, FirebaseListObservable } from "angularfire2/database-deprecated";
+
+  import { HttpClientModule } from '@angular/common/http'; 
+ 
 
 export const firebaseConfig = {
       apiKey: "AIzaSyCaE4ASRWuXBqueMnR5dLy0srNwYZzGzsk",
@@ -53,7 +58,8 @@ export class MaterialModule { }
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
