@@ -66,3 +66,9 @@ a {
     color: rgb(67, 11, 139) !important;
 }
 .navbar-collapse.collapse.in { display: block!important; }
+
+
+
+.example-form {
+    width: 350px;
+ }
