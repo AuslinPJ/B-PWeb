@@ -11,6 +11,8 @@ import {MatToolbarModule,MatIconModule,MatButtonModule
   ,MatSidenavModule,MatFormFieldModule,MatInputModule,MatMenuModule} from '@angular/material';
   import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   import {FormControl,FormsModule,ReactiveFormsModule, Validators} from '@angular/forms';
+  import { HttpModule } from '@angular/http';
+  import { HttpClient } from '@angular/common/http';
 
 export const firebaseConfig = {
       apiKey: "AIzaSyCaE4ASRWuXBqueMnR5dLy0srNwYZzGzsk",
@@ -48,6 +50,7 @@ export class MaterialModule { }
     MatFormFieldModule,
     MatInputModule,
     FormsModule, 
+    HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule

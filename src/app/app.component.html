@@ -118,25 +118,34 @@
   <div class="row">
     <div class="col-sm-5">
       <p>Contact us and we'll get back to you asap.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Pittsburgh, USA</p>
+      <!--<p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>-->
       <p><span class="glyphicon glyphicon-envelope"></span> bandpenterpriseusa@gmail.com</p>
     </div>
     <div class="col-sm-7 slideanim">
       <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
+        <form class="example-form" #formData="ngForm" (ngSubmit)="onSubmit(formData)">
+          
+                    <mat-form-field class="example-full-width" >
+                      <input matInput floatPlaceholder="auto" placeholder="Name" (ngModel)="name" name="name" required>
+                    </mat-form-field>
+                        
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Enter your email"  name="email" required (ngModel)="email" pattern="[a-zA-Z0-9.!#$% &’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*">
+                    </mat-form-field><br>
+          
+                    <mat-form-field class="example-full-width" >
+                      <input matInput floatPlaceholder="auto" placeholder="Subject" (ngModel)="subject" name="subject">
+                    </mat-form-field><br>
+                        
+                    <mat-form-field class="example-full-width">
+                      <textarea matInput placeholder="Message" name="message" (ngModel)="message" required></textarea>
+                    </mat-form-field>
+                    <br>
+                    <button mat-raised-button color="primary" [disabled]="!formData.valid" class="example-full-width" (click)="mess()" >Send Message</button>
+                </form> 
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
+      
     </div>
   </div>
 </div>
