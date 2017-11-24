@@ -26,35 +26,27 @@
         </div>
       </nav>
   <div class="jumbotron text-center">
-    <h1>BandP Enterprise</h1> 
+    <div class="container">
+    <br><br><h1>BandP Enterprise</h1> <br><br>
     <p>"Love to design,implement and deliver" <br>
     ~~team bandP</p> 
-
   </div>
-</body>
+  </div>
+
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid text-center">
   <div class="row">
-       <div class="row">
-          <!--<h2>About  B&P</h2>-->
-          <div class="col-md-12 container-fluid text-center">
-            <div class="thumbnail">
-                <img src="../assets/B&P.png" alt="Logo">
-               <!-- <p><strong>B&P: Design,implement and deliver</strong></p>-->
-           </div>
-          <h4>B&P Enterprise is a website building company focused on improving the quality and functionality 
-            of websites . We love to design,implement and deliver</h4><br><br>
-          <div class="col-md-8">
-             <!-- <h2>Our Values</h2>-->
-              <h4 class="text-justify"><strong>MISSION:</strong> Design,implement and deliver. 
+      <h2>About  B&P</h2>
+       <div class="row col-md-12">
+           <h4>B&P Enterprise is a website building company focused on improving the quality and functionality 
+            of websites . We love to design,implement and deliver</h4><br><br>     
+        
+             <h4 class="text-justify"><strong>MISSION:</strong> Design,implement and deliver. 
                 Our mission is to provide the best product and services with the client satisfaction  at reasonable prices. 
                 We provide innovative designs with integrity and professionalism</h4>      
               <h4 class="text-justify"><strong>OFFERING:</strong> Our Offering is a combination of design,innovation and technology</h4>
-            </div>
-         
-               
-            </div>
+                   
        </div>
        <div class="row">
       <div class="col-md-4">
@@ -95,20 +87,30 @@
       <div class="col-sm-4">
         <span class="glyphicon glyphicon-cloud logo-small"></span>
         <h4>Web Design</h4>
-        <p class="text-justify">We provide creative responsive websites with the latest technologies.</p>
       </div>
       <div class="col-sm-4">
         <span class="glyphicon glyphicon-wrench logo-small"></span>
         <h4>Web Development</h4>
-        <p class="text-justify"> We Design, code and modify websites, from layout to function and according to a client's specifications.Web development comes in two flavors - front-end development and back-end development.</p>
       </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-globe  logo-small"></span>
+        <h4>Web Hosting</h4>
+      </div>
+    </div><br><br>
+    <div class="row">
       <div class="col-sm-4">
         <span class="glyphicon glyphicon-folder-open logo-small"></span>
         <h4>Software Development</h4>
-        <p class="text-justify">Our team  provides design, installation, testing and maintenance of software systems. </p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-modal-window logo-small"></span>
+        <h4>Platform Development</h4>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-cloud logo-small"></span>
+        <h4>Cloud Application</h4>
       </div>
     </div>
-    
   </div>
 
 <!-- Container (Contact Section) -->
@@ -123,6 +125,7 @@
     </div>
     <div class="col-sm-7 slideanim">
       <div class="row">
+        
         <form class="example-form" #formData="ngForm" (ngSubmit)="onSubmit(formData)">
           
                     <mat-form-field class="example-full-width" >
@@ -166,4 +169,4 @@
       </i>
     </footer>
 
-  
+  </body>
