@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
@@ -114,21 +114,21 @@
   </div>
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
+<div id="contact" class="container-fluid bg-grey text-center">
+  <h2 class="text-center">CONTACT US</h2>
   <div class="row">
-    <div class="col-sm-5">
+    <div class="col-md-4">
       <p>Contact us and we'll get back to you asap.</p>
       <p><span class="glyphicon glyphicon-map-marker"></span> Pittsburgh, USA</p>
       <!--<p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>-->
       <p><span class="glyphicon glyphicon-envelope"></span> bandpenterpriseusa@gmail.com</p>
     </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
+    <div class="col-md-4 slideanim">
+      <div class="row ">
         
-        <form class="example-form" #formData="ngForm" (ngSubmit)="onSubmit(formData)">
+        <form class="example-form center-block" #formData="ngForm" (ngSubmit)="onSubmit(formData)">
           
-                    <mat-form-field class="example-full-width" >
+                    <mat-form-field class="example-full-width " >
                       <input matInput floatPlaceholder="auto" placeholder="Name" (ngModel)="name" name="name" required>
                     </mat-form-field>
                         
@@ -146,20 +146,23 @@
                     <br>
                     <button mat-raised-button color="primary" [disabled]="!formData.valid" class="example-full-width" (click)="mess()" >Send Message</button>
                 </form> 
-
+<br>
               
       </div>
      
     </div>
+    <div class="col-md-4">
+        <agm-map [latitude]="lat" [longitude]="lng">
+            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+          </agm-map>
+      </div>
   
   </div>
  
 </div>
 
 
-<agm-map [latitude]="lat" [longitude]="lng">
-  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-</agm-map>
+
 
   <!-- Footer ( -->
   <footer class="container-fluid text-center">
