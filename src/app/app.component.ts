@@ -23,6 +23,11 @@ import { AngularFireAuth } from 'angularfire2/auth';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  title: string = 'My first AGM project';
+  lat: number = 40.440625;
+  lng: number = -79.995886;
+
   user: Observable<firebase.User>;
   //items: FirebaseListObservable<any[]>;
   msgVal: string = '';

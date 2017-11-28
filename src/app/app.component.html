@@ -146,11 +146,21 @@
                     <br>
                     <button mat-raised-button color="primary" [disabled]="!formData.valid" class="example-full-width" (click)="mess()" >Send Message</button>
                 </form> 
+
+              
       </div>
-      
+     
     </div>
+  
   </div>
+ 
 </div>
+
+
+<agm-map [latitude]="lat" [longitude]="lng">
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
+
   <!-- Footer ( -->
   <footer class="container-fluid text-center">
       <a href="#myPage" title="To Top">

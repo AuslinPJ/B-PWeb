@@ -17,6 +17,8 @@ import {MatToolbarModule,MatIconModule,MatButtonModule
   import { AngularFireDatabase, FirebaseListObservable } from "angularfire2/database-deprecated";
 
   import { HttpClientModule } from '@angular/common/http'; 
+  //AGM
+  import { AgmCoreModule } from '@agm/core';
  
 
 export const firebaseConfig = {
@@ -59,6 +61,9 @@ export class MaterialModule { }
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyD9eo9WcGQZDWdODZu9iq-GpjURuieHOa0'
+    })
   
   ],
   providers: [],

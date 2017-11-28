@@ -72,3 +72,8 @@ a {
 .example-form {
     width: 350px;
  }
+
+ agm-map {
+    height: 300px;
+    
+  }
