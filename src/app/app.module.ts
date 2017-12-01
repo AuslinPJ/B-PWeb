@@ -22,12 +22,18 @@ import {MatToolbarModule,MatIconModule,MatButtonModule
  
 
 export const firebaseConfig = {
-      apiKey: "AIzaSyCaE4ASRWuXBqueMnR5dLy0srNwYZzGzsk",
+      /**apiKey: "AIzaSyCaE4ASRWuXBqueMnR5dLy0srNwYZzGzsk",
       authDomain: "bandpenterprise-1caa4.firebaseapp.com",
       databaseURL: "https://bandpenterprise-1caa4.firebaseio.com",
       projectId: "bandpenterprise-1caa4",
       storageBucket: "",
-      messagingSenderId: "357278893634"
+      messagingSenderId: "357278893634"**/
+  apiKey: "AIzaSyCGpmRBZoxjFPrMuhtUB5e-tzBADAvPR-E",
+  authDomain: "infinitybeeusa-473c1.firebaseapp.com",
+  databaseURL: "https://infinitybeeusa-473c1.firebaseio.com",
+  projectId: "infinitybeeusa-473c1",
+  storageBucket: "infinitybeeusa-473c1.appspot.com",
+  messagingSenderId: "999519410049"
 };
 
 

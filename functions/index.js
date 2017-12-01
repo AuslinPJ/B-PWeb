@@ -14,7 +14,7 @@ const mailTransport = nodemailer.createTransport({
 });
 
 const APP_NAME = 'Queries from Web';
-const doc_email = 'bandpenterpriseusa@gmail.com'; //change
+const doc_email = 'infinitybeeusa@gmail.com'; //change
 
 exports.sendMsg = functions.database.ref('/messages/{pushId}')
     .onWrite(event => {
